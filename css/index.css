@@ -1,0 +1,13 @@
+body {
+	background-color: white;
+}
+
+#previewDiv * {
+	max-width: 100vw;
+	max-height: 100vh;
+}
+
+#output {
+	max-height: 300px;
+	overflow: scroll;
+}

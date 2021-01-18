@@ -1,0 +1,86 @@
+{
+    "name": "virtual-green-screen",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "dmg": {
+        "format": "UDBZ"
+    },
+    "build": {
+        "copyright": "Copyright © 2019 Tucker Willenborg",
+        "productName": "Virtual Green Screen",
+        "appId": "com.electron.virtual-green-screen",
+        "compression": "maximum",
+        "directories": {
+            "output": "dist"
+        },
+        "fileAssociations": [
+            {
+                "ext": [
+                    "mp4"
+                ],
+                "name": "MPEG-4 Video",
+                "role": "Viewer"
+            },
+            {
+                "ext": [
+                    "ogg"
+                ],
+                "name": "ogg Video",
+                "role": "Viewer"
+            },
+            {
+                "ext": [
+                    "webm"
+                ],
+                "name": "webm Video",
+                "role": "Viewer"
+            },
+            {
+                "ext": [
+                    "jpg",
+                    "jpeg"
+                ],
+                "name": "JPEG Image",
+                "role": "Viewer"
+            },
+            {
+                "ext": [
+                    "png"
+                ],
+                "name": "PNG Image",
+                "role": "Viewer"
+            },
+            {
+                "ext": [
+                    "webp"
+                ],
+                "name": "WebP Image",
+                "role": "Viewer"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ecc521/virtual-green-screen.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "",
+    "bugs": {
+        "url": "https://github.com/ecc521/virtual-green-screen/issues"
+    },
+    "homepage": "https://github.com/ecc521/virtual-green-screen#readme",
+    "devDependencies": {
+        "electron": "^11.2.0",
+        "electron-builder": "^22.9.1"
+    },
+    "dependencies": {
+        "@tensorflow-models/body-pix": "^2.0.5",
+        "ffmpeg-static": "^4.2.7",
+        "mime-types": "^2.1.28"
+    }
+}
