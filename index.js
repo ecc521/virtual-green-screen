@@ -1,5 +1,7 @@
 const { app, BrowserWindow, screen } = require('electron')
 
+app.commandLine.appendSwitch('js-flags', '--max-old-space-size=12388');
+
 function createWindow () {
     let display = screen.getPrimaryDisplay()
 

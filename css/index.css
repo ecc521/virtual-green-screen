@@ -9,5 +9,16 @@ body {
 
 #output {
 	max-height: 300px;
-	overflow: scroll;
+	/*overflow: scroll;*/
+}
+
+
+#output {
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y proximity;
+}
+
+#output:last-child {
+  scroll-snap-align: end;
 }

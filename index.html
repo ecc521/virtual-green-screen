@@ -11,6 +11,20 @@
 	<p>Select AI Model for processing: </p>
 	<select id="modelSelector"></select>
 	<br>
+	<p>Model Resolution Setting: </p>
+	<select id="qualitySelector">
+		<option value="low">Low</option>
+		<option value="medium">Medium</option>
+		<option value="high">High</option>
+		<option value="full" selected>Maximum (Default)</option>
+	</select>
+	<!--<p>Model Resolution Setting: </p>
+	<select id="quantSelector">
+		<option value="quant4">1/4</option>
+		<option value="quant2">Medium</option>
+		<option value="float">Full Model</option>
+	</select>-->
+	<br>
 	<button id="processButton">Process Item</button>
 	<div id="output"></div>
 	<link href="css/index.css" rel="stylesheet">
